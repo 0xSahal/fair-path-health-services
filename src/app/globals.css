@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design tokens ───────────────────────────────────────────────── */
+:root {
+  --fp-black: #0d0d0d;
+  /* Solid header / legal bar — matches site navbar */
+  --fp-nav-solid: #1a0f07;
+  --fp-brown-dark: #2c1a0e;
+  --fp-copper: #b07d4a;
+  --fp-copper-light: #c99a6b;
+  --fp-copper-dark: #8a5e30;
+  --fp-cream: #faf4ec;
+  --fp-cream-dark: #f0e8d8;
+  --fp-white: #ffffff;
+  --fp-text-primary: #1a1008;
+  --fp-text-body: #3d2b1a;
+  --fp-text-muted: #7a6550;
+  --fp-border: #e0d4c0;
+  --fp-success: #2d7a4f;
+  --fp-overlay: rgba(13, 13, 13, 0.6);
+
+  /* Warm gold accents — alias copper tokens so marketing + about stay aligned */
+  --fp-gold: var(--fp-copper);
+  --fp-gold-light: var(--fp-copper-light);
+  --fp-gold-dark: var(--fp-copper-dark);
+
+  /* RGB triplets — for `rgba(var(--*-rgb) / <alpha>)` composition */
+  --fp-black-rgb: 13 13 13;
+  --fp-nav-solid-rgb: 26 15 7;
+  --fp-brown-dark-rgb: 44 26 14;
+  --fp-copper-rgb: 176 125 74;
+  --fp-copper-light-rgb: 201 154 107;
+  --fp-copper-dark-rgb: 138 94 48;
+  --fp-cream-rgb: 250 244 236;
+  --fp-cream-dark-rgb: 240 232 216;
+  --fp-white-rgb: 255 255 255;
+  --fp-green-rgb: 45 122 79;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 3rem;
+  --fs-6xl: 3.75rem;
+  --fs-7xl: 4.5rem;
+
+  --fp-section-py-mobile: 3rem;
+  --fp-section-py-desktop: 5rem;
+
+  /* Navbar shell height — keep sticky header + scroll offset in sync */
+  --fp-nav-height: 5rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --fp-nav-height: 5.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fp-nav-height: 6rem;
+  }
+}
+
+/* ─── Base reset ───────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + var(--fp-nav-height));
+  /* Match body — prevents stray horizontal scroll (e.g. 100vw/iOS quirks, transformed sheets). */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  background-color: var(--fp-cream);
+  color: var(--fp-text-body);
+  font-size: var(--fs-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--fp-copper);
+  color: var(--fp-white);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--fp-copper) var(--fp-cream);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--fp-cream);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--fp-copper);
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--fp-copper-dark);
+}
+
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-playfair), Georgia, serif;
+    font-weight: 600;
+    color: var(--fp-text-primary);
+    letter-spacing: -0.02em;
+  }
+
+  h3,
+  h4 {
+    font-family: var(--font-lora), Georgia, serif;
+    font-weight: 600;
+    color: var(--fp-text-primary);
+  }
+
+  h5,
+  h6 {
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+    font-weight: 600;
+    color: var(--fp-text-primary);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* ─── Legacy / shared utility classes (token-backed) ───────────────── */
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .fp-page-hero-inset {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 1.75rem);
+  }
+
+  .section-label {
+    @apply mb-3 font-accent text-[11px] font-semibold uppercase tracking-[0.2em] text-fp-copper;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-transparent
+           bg-fp-copper px-7 py-3.5 font-body text-[13px] font-semibold uppercase tracking-[0.06em] text-fp-white
+           transition-all duration-200
+           hover:bg-fp-copper-light hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(176,125,74,0.28)]
+           active:translate-y-0 active:bg-fp-copper-dark active:shadow-none
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fp-copper focus-visible:ring-offset-2;
+  }
+
+  .btn-ghost-white {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-white/70 px-7 py-3.5
+           font-body text-[13px] font-semibold uppercase tracking-[0.06em] text-white
+           transition-all duration-200
+           hover:border-white hover:bg-white/10
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2;
+  }
+
+  .btn-outline-mah {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-fp-brown-dark px-7 py-3.5
+           font-body text-[13px] font-semibold uppercase tracking-[0.06em] text-fp-brown-dark
+           transition-all duration-200
+           hover:bg-fp-brown-dark hover:text-fp-cream
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fp-copper focus-visible:ring-offset-2;
+  }
+
+  .card-trust {
+    @apply rounded-card border border-fp-border/80 bg-fp-white p-7 shadow-card
+           transition-all duration-300
+           hover:-translate-y-1.5 hover:border-fp-copper/40 hover:shadow-card-hover;
+  }
+
+  .field-input {
+    @apply h-[48px] w-full rounded-lg border border-fp-border bg-fp-cream px-4 text-[15px] text-fp-text-primary
+           placeholder:text-fp-text-muted/50
+           transition-all duration-200
+           focus:border-fp-copper focus:outline-none focus:ring-2 focus:ring-fp-copper/20;
+  }
+
+  .field-label {
+    @apply mb-1.5 block font-body text-[12px] font-semibold uppercase tracking-[0.04em] text-fp-text-muted;
+  }
+
+  .field-error {
+    @apply mt-1 font-body text-[12px] text-fp-copper-dark;
+  }
+
+  .fp-section-padding {
+    padding-top: var(--fp-section-py-mobile);
+    padding-bottom: var(--fp-section-py-mobile);
+  }
+
+  @media (min-width: 1024px) {
+    .fp-section-padding {
+      padding-top: var(--fp-section-py-desktop);
+      padding-bottom: var(--fp-section-py-desktop);
+    }
+  }
+
+  /* Home hero — progress bar fill (remount via `key` on slide change) */
+  .animate-fp-hero-progress {
+    animation: fp-hero-progress 5s linear forwards;
+    transform-origin: left;
+  }
+
+  @keyframes fp-hero-progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* ── SSR-friendly fade/slide-up reveal (zero JS) ─────────────────────
+     Default: content is visible. A one-time entrance animation runs on
+     mount, so the user never sees a blank section. In modern browsers
+     that support scroll-driven animations, the reveal re-attaches to
+     the element's view timeline so it animates as it scrolls in. */
+  .fp-reveal {
+    opacity: 1;
+    animation: fp-reveal-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes fp-reveal-up {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 18px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Scroll-driven reveal (Chromium-based browsers + Safari TP). When this
+     is supported, the entrance animation is re-driven by the element's
+     view-timeline as it enters the viewport. */
+  @supports (animation-timeline: view()) {
+    .fp-reveal {
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fp-reveal {
+      animation: none;
+    }
+  }
+
+  /* About page — subtle film grain on dark panels (warm, low-contrast) */
+  .about-hero-grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.11;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+    animation: about-grain-shift 18s steps(6) infinite;
+  }
+
+  @keyframes about-grain-shift {
+    0% {
+      transform: translate(0, 0);
+    }
+    33% {
+      transform: translate(-1.5%, 1%);
+    }
+    66% {
+      transform: translate(1%, -1.5%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about-hero-grain {
+      animation: none;
+    }
+  }
+
+  /* Service listing + detail heroes — full-bleed, center-weighted crop on phones/tablets */
+  @media (max-width: 1024px) {
+    .service-banner-hero-image {
+      top: 50% !important;
+      right: auto !important;
+      bottom: auto !important;
+      left: 50% !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-width: 100% !important;
+      min-height: 100% !important;
+      max-width: none !important;
+      transform: translate(-50%, -50%) !important;
+      object-fit: cover !important;
+      object-position: center center !important;
+    }
+  }
+}
