@@ -40,16 +40,6 @@ const items: T[] = [
     avatarText: 'text-fp-cream',
   },
   {
-    id: '3',
-    quote:
-      "The DBHDD services they provide for my son have been exceptional. The team is knowledgeable, compassionate, and truly understands his needs. I can't recommend them enough.",
-    name: 'Denise W., Marietta, GA',
-    meta: 'Parent of Client',
-    initial: 'D',
-    avatarBg: 'bg-[#a8b89a]',
-    avatarText: 'text-fp-brown-dark',
-  },
-  {
     id: '4',
     quote:
       "After my wife's stroke we needed help fast. Fair Path put a plan together within a week, and the caregiver they sent has been a blessing to us both. I don't know how we would've managed without them.",

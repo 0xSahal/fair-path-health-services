@@ -57,9 +57,6 @@ export default function AboutSection() {
                 <p className="mt-2 font-body text-[13px] font-semibold text-mahogany">
                   State Certified Agency
                 </p>
-                <p className="font-body text-[12px] text-slate">
-                  DBHDD Approved
-                </p>
               </div>
             </div>
           </ScrollReveal>

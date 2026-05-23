@@ -10,7 +10,7 @@ import { SectionTag } from '@/components/ui/SectionTag'
 export const metadata: Metadata = {
   title: 'Payment & Insurance | Fair Path Health Services',
   description:
-    'Private pay pricing and transparency for Georgia in-home care. Medicaid, insurance, and Aid & Attendance are coming soon. Contact Fair Path for a consultation.',
+    'Private pay pricing and transparency for Georgia in-home care. Medicaid and insurance options are coming soon. Contact Fair Path for a consultation.',
 }
 
 const AVAILABLE_BENEFITS = [
@@ -30,7 +30,6 @@ const PRICING_FACTORS = [
 const COMING_SOON_OPTIONS = [
   'Medicaid CCSP/SOURCE',
   'Insurance Coverage',
-  'Aid & Attendance Benefit',
 ] as const
 
 export default function PaymentAndInsurancePage() {

@@ -118,7 +118,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: 'ul', items: ['Personal care support', 'Help with daily routines', 'Care coordination and planning'] },
       { type: 'p', text: 'Eligibility depends on care needs and financial guidelines. A free consultation helps clarify the best next step.' },
     ],
-    relatedSlugs: ['veterans-benefits-for-home-care-complete-guide'],
+    relatedSlugs: ['difference-between-hha-and-pca'],
     seo: {
       title: 'Georgia Medicaid CCSP Overview | Fair Path Health Services',
       description:
@@ -174,32 +174,6 @@ export const BLOG_POSTS: BlogPost[] = [
       description:
         'Practical strategies for memory care at home: routines, safety, communication, and caregiver support for dementia and Alzheimer’s.',
       keywords: ['memory care at home', 'dementia care', 'alzheimers home care'],
-    },
-  },
-  {
-    slug: 'veterans-benefits-for-home-care-complete-guide',
-    title: "Veterans' Benefits for Home Care: A Complete Guide",
-    category: 'Payment & Insurance',
-    date: '2026-02-26',
-    excerpt:
-      'Aid & Attendance may help eligible veterans and surviving spouses fund in-home support. Here’s what families should know.',
-    image: {
-      src: '/images/service-aid-attendence.webp',
-      alt: 'Honor and support for veterans and families planning home care',
-    },
-    author: { name: 'Fair Path Care Team', title: 'Benefits Navigation' },
-    content: [
-      { type: 'p', text: 'Aid & Attendance is a VA benefit that can help fund care for eligible veterans and surviving spouses.' },
-      { type: 'h2', text: 'What families should prepare' },
-      { type: 'ul', items: ['Service history documentation', 'Care need details', 'Financial/asset documentation'] },
-      { type: 'p', text: 'Fair Path offers a no-cost eligibility conversation to help you understand your options.' },
-    ],
-    relatedSlugs: ['understanding-georgia-medicaid-ccsp'],
-    seo: {
-      title: "Veterans' Benefits for Home Care | Fair Path Health Services",
-      description:
-        'Aid & Attendance overview: what it is, who may qualify, and how families can navigate benefits to support in-home care.',
-      keywords: ['Aid and Attendance', 'VA benefits', 'veterans home care'],
     },
   },
 ]

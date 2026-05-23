@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import {
-  Accessibility,
   ArrowRight,
   CalendarCheck,
   Car,
@@ -48,13 +47,6 @@ const services: {
     icon: Car,
     desc:
       'Reliable door-to-door rides to appointments, errands, and community outings.',
-  },
-  {
-    name: 'Disability Support Services',
-    href: '/services/developmental-disabilities',
-    icon: Accessibility,
-    desc:
-      "State-approved support for developmental disabilities through Georgia's DBHDD program.",
   },
   {
     name: 'Care Coordination',
@@ -117,7 +109,7 @@ export default function HomeServicesGrid() {
             size="lg"
             className="normal-case tracking-normal"
           >
-            View All 12 Services →
+            View All 9 Services →
           </Button>
         </Reveal>
       </div>

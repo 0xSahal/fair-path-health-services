@@ -11,7 +11,7 @@ import { HELPFUL_LINKS } from '@/lib/resources-data'
 export const metadata: Metadata = {
   title: 'Helpful Links | Fair Path Health Services',
   description:
-    'Helpful healthcare resources for families: government, care programs, veterans benefits, and local aging support links.',
+    'Helpful healthcare resources for families: government, care programs, and local aging support links.',
 }
 
 export default function ResourcesLinksPage() {

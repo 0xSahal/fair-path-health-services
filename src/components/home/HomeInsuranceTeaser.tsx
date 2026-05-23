@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import { Building2, CreditCard, HeartHandshake, RefreshCw } from 'lucide-react'
+import { Building2, CreditCard, RefreshCw } from 'lucide-react'
 
 import Reveal from '@/components/shared/Reveal'
 
 const icons = [
   { Icon: Building2, label: 'Medicaid' },
   { Icon: RefreshCw, label: 'Medicaid SOURCE' },
-  { Icon: HeartHandshake, label: 'Aid & Attendance' },
   { Icon: CreditCard, label: 'Private Pay' },
 ] as const
 
@@ -22,8 +21,8 @@ export default function HomeInsuranceTeaser() {
             Multiple Payment Options for Every Budget
           </h2>
           <p className="mt-5 font-body text-lg leading-relaxed text-fp-cream/85">
-            We accept Medicaid CCSP/SOURCE, Aid & Attendance Veterans Benefits, and Private Pay
-            options. Our team helps you navigate coverage to get the best care for your loved one.
+            We accept Medicaid CCSP/SOURCE and Private Pay options. Our team helps you navigate
+            coverage to get the best care for your loved one.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-8">

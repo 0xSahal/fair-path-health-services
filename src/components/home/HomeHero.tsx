@@ -83,7 +83,7 @@ const slides = [
       </>
     ),
     sub:
-      'Accepting Medicaid CCSP/SOURCE, Aid & Attendance, and Private Pay, making quality care accessible to every family.',
+      'Accepting Medicaid CCSP/SOURCE and Private Pay, making quality care accessible to every family.',
     ctas: (
       <>
         <Link

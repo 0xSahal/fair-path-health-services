@@ -7,7 +7,7 @@ import FaqClient from '@/components/resources/FaqClient'
 export const metadata: Metadata = {
   title: 'FAQ | Fair Path Health Services',
   description:
-    'Frequently asked questions about Fair Path Health Services: getting started, services, scheduling, payment, caregiver selection, DBHDD services, and careers.',
+    'Frequently asked questions about Fair Path Health Services: getting started, services, scheduling, payment, caregiver selection, and careers.',
 }
 
 export default function ResourcesFaqPage() {

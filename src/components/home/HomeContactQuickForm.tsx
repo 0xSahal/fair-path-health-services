@@ -21,7 +21,6 @@ const SERVICE_OPTIONS = [
   { value: 'nursing-care', label: 'Nursing Care' },
   { value: 'companion-homemaking', label: 'Companion & Homemaking' },
   { value: 'transportation', label: 'Transportation' },
-  { value: 'dbhdd', label: 'Disability Support Services' },
   { value: 'care-coordination', label: 'Care Coordination' },
   { value: 'other', label: 'Other / Not Sure' },
 ] as const

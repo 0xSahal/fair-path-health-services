@@ -26,7 +26,6 @@ const CONDITIONS = [
   'Dementia/Alzheimer’s',
   'Mobility limitations',
   'Post-surgery recovery',
-  'Developmental disability',
   'Other',
 ] as const
 

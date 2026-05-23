@@ -19,9 +19,7 @@ const SERVICES_LINKS = [
   { label: 'Transportation', href: '/services/transportation' },
   { label: 'Nursing Care', href: '/services/nursing-care' },
   { label: 'Companion & Homemaking', href: '/services/companion-homemaking' },
-  { label: 'DBHDD Services', href: '/services/developmental-disabilities' },
   { label: 'Care Coordination', href: '/services/care-coordination' },
-  { label: 'Pharmacy Services', href: '/services/pharmacy-services' },
   { label: 'Respite Care', href: '/services/respite-care' },
 ]
 

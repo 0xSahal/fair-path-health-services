@@ -57,7 +57,6 @@ export const metadata: Metadata = {
     'in-home care douglasville',
     'medicaid home care georgia',
     'elder care atlanta',
-    'DBHDD services georgia',
     'personal care aide georgia',
   ],
   authors: [{ name: SITE_CONFIG.name, url: siteUrl }],

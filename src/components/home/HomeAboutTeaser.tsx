@@ -27,15 +27,15 @@ export default function HomeAboutTeaser() {
             <p className="mt-5 font-body text-lg leading-relaxed text-fp-text-body">
               Founded on the values of compassion, care, integrity, and wellness, we serve families
               across 10 Georgia counties, providing everything from daily personal assistance to
-              skilled nursing care and specialized programs for individuals with developmental
-              disabilities. Founded right here in Georgia, by people who understand firsthand what
+              skilled nursing care and specialized memory and respite programs. Founded right here
+              in Georgia, by people who understand firsthand what
               it means to need trusted care at home.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-fp-border pt-8 font-body text-sm font-semibold text-fp-brown-dark">
               <span>10 Counties Served</span>
               <span className="text-fp-copper" aria-hidden>•</span>
-              <span>12+ Service Types</span>
+              <span>9+ Service Types</span>
               <span className="text-fp-copper" aria-hidden>•</span>
               <span>24/7 Emergency Support</span>
             </div>

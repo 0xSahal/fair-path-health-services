@@ -43,14 +43,8 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Transportation', href: '/services/transportation' },
       { label: 'Nursing Care', href: '/services/nursing-care' },
       { label: 'Care Coordination', href: '/services/care-coordination' },
-      { label: 'Pharmacy Services', href: '/services/pharmacy-services' },
-      {
-        label: 'Developmental Disabilities (DBHDD)',
-        href: '/services/developmental-disabilities',
-      },
       { label: 'Memory Care Support', href: '/services/memory-care' },
       { label: 'Respite Care', href: '/services/respite-care' },
-      { label: 'Aid & Attendance', href: '/services/aid-attendance' },
       { label: 'Consulting Services', href: '/services/consulting' },
     ],
   },
@@ -91,20 +85,13 @@ export const SERVICES_MEGA_MENU = {
           href: '/services/care-coordination',
           icon: 'CalendarCheck',
         },
-        { label: 'Pharmacy Services', href: '/services/pharmacy-services', icon: 'Pill' },
       ],
     },
     {
       heading: 'Specialized Programs',
       items: [
-        {
-          label: 'Developmental Disabilities (DBHDD)',
-          href: '/services/developmental-disabilities',
-          icon: 'Accessibility',
-        },
         { label: 'Memory Care Support', href: '/services/memory-care', icon: 'Brain' },
         { label: 'Respite Care', href: '/services/respite-care', icon: 'Coffee' },
-        { label: 'Aid & Attendance', href: '/services/aid-attendance', icon: 'Medal' },
         { label: 'Consulting Services', href: '/services/consulting', icon: 'MessagesSquare' },
       ],
     },
@@ -153,22 +140,6 @@ export const SERVICE_ITEMS: Service[] = [
       'Scheduling, documentation, and communication between family, caregivers, and providers to ensure seamless care.',
   },
   {
-    id: '6',
-    name: 'Pharmacy Services',
-    slug: 'pharmacy-services',
-    icon: 'Pill',
-    shortDescription:
-      'Medication support and coordination designed to reduce errors, improve adherence, and support better outcomes.',
-  },
-  {
-    id: '7',
-    name: 'Developmental Disabilities (DBHDD)',
-    slug: 'developmental-disabilities',
-    icon: 'Accessibility',
-    shortDescription:
-      'Individualized, respectful supports aligned with Georgia DBHDD expectations — empowering independence and safety.',
-  },
-  {
     id: '8',
     name: 'Memory Care Support',
     slug: 'memory-care',
@@ -183,14 +154,6 @@ export const SERVICE_ITEMS: Service[] = [
     icon: 'Coffee',
     shortDescription:
       'Short-term relief for family caregivers — dependable coverage so you can rest, travel, or handle life’s demands.',
-  },
-  {
-    id: '10',
-    name: 'Aid & Attendance',
-    slug: 'aid-attendance',
-    icon: 'Medal',
-    shortDescription:
-      'We help families understand this Veterans benefit that may help fund in-home care for eligible clients.',
   },
   {
     id: '11',
@@ -331,7 +294,6 @@ export const INSURANCE_PROGRAMS: InsuranceProgram[] = [
   { icon: 'FileCheck2', name: 'SOURCE', desc: 'Service Options Using Resources in a Community Environment' },
   { icon: 'RefreshCw', name: 'NOW / COMP', desc: 'New Options & Comprehensive Supports Waivers' },
   { icon: 'CreditCard', name: 'Private Pay', desc: 'Flexible private payment plans tailored to your family' },
-  { icon: 'Medal', name: 'Aid & Attendance', desc: 'Veterans pension benefit that may help fund personal care services' },
 ]
 
 export const HERO_IMAGES = [
