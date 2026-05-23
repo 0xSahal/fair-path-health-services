@@ -24,7 +24,7 @@ const ROWS = [
   },
   {
     title: 'Local Georgia team',
-    body: 'Douglasville-rooted leadership with coordinators who know the counties we serve. When weather, traffic, or life shifts plans, you are talking to neighbors, not a distant call center.',
+    body: 'Grayson County-rooted leadership with coordinators who know the counties we serve. When weather, traffic, or life shifts plans, you are talking to neighbors, not a distant call center.',
     Icon: MapPin,
   },
 ] as const
