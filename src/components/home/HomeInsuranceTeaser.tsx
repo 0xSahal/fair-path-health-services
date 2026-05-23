@@ -1,13 +1,9 @@
 import Link from 'next/link'
-import { Building2, CreditCard, RefreshCw } from 'lucide-react'
+import { CreditCard } from 'lucide-react'
 
 import Reveal from '@/components/shared/Reveal'
 
-const icons = [
-  { Icon: Building2, label: 'Medicaid' },
-  { Icon: RefreshCw, label: 'Medicaid SOURCE' },
-  { Icon: CreditCard, label: 'Private Pay' },
-] as const
+const icons = [{ Icon: CreditCard, label: 'Private Pay' }] as const
 
 export default function HomeInsuranceTeaser() {
   return (
@@ -18,11 +14,11 @@ export default function HomeInsuranceTeaser() {
       <div className="section-container">
         <Reveal className="mx-auto max-w-[700px] text-center">
           <h2 className="font-display text-h2 font-semibold text-fp-cream">
-            Multiple Payment Options for Every Budget
+            Private Pay Home Care
           </h2>
           <p className="mt-5 font-body text-lg leading-relaxed text-fp-cream/85">
-            We accept Medicaid CCSP/SOURCE and Private Pay options. Our team helps you navigate
-            coverage to get the best care for your loved one.
+            We accept private pay only. Our team helps you understand pricing and build a care plan
+            that fits your loved one&apos;s needs and your budget.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-8">

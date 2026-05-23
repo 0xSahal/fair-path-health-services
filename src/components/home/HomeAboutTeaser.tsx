@@ -76,7 +76,7 @@ export default function HomeAboutTeaser() {
                 <div className="flex items-center gap-2">
                   <BadgeCheck className="h-6 w-6 shrink-0" aria-hidden />
                   <p className="font-body text-[13px] font-bold leading-snug">
-                    Medicaid Certified Provider
+                    Private Pay Accepted
                   </p>
                 </div>
               </div>

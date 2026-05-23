@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { CheckCircle2 } from 'lucide-react'
 
 const TRUST_ITEMS = [
-  'Medicaid CCSP Certified',
   'Licensed & Insured Agency',
   '500+ Families Served',
   '10 Georgia Counties',

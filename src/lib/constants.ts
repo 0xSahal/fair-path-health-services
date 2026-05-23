@@ -209,7 +209,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '2',
     quote:
-      'Medicaid paperwork felt overwhelming until Fair Path walked us through every step. Mom keeps her dignity at home, and the office team communicates with us every single week.',
+      'Getting started felt overwhelming until Fair Path walked us through every step. Mom keeps her dignity at home, and the office team communicates with us every single week.',
     name: 'Marcus L.',
     city: 'Peachtree City, GA',
     initial: 'M',
@@ -259,9 +259,9 @@ export const FAQ_ITEMS: FAQ[] = [
   },
   {
     id: '2',
-    question: 'How do I know if my loved one qualifies for Medicaid home care?',
+    question: 'What payment methods do you accept?',
     answer:
-      "Medicaid eligibility depends on medical need and income criteria. We help families navigate this process completely — from assessment to application. Call us and we'll walk you through it at absolutely no cost.",
+      'We accept private pay only. Our team can walk you through flexible scheduling and pricing during a free consultation.',
   },
   {
     id: '3',
@@ -290,9 +290,6 @@ export const FAQ_ITEMS: FAQ[] = [
 ]
 
 export const INSURANCE_PROGRAMS: InsuranceProgram[] = [
-  { icon: 'Building2', name: 'Medicaid CCSP', desc: 'Community Care Services Program' },
-  { icon: 'FileCheck2', name: 'SOURCE', desc: 'Service Options Using Resources in a Community Environment' },
-  { icon: 'RefreshCw', name: 'NOW / COMP', desc: 'New Options & Comprehensive Supports Waivers' },
   { icon: 'CreditCard', name: 'Private Pay', desc: 'Flexible private payment plans tailored to your family' },
 ]
 

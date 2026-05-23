@@ -8,8 +8,8 @@ import { SlideInWhenVisible } from '../FadeInWhenVisible'
 
 const ROWS = [
   {
-    title: 'Medicaid accepted',
-    body: 'Certified across Georgia Medicaid pathways families rely on, including CCSP, SOURCE, NOW, and COMP, with transparent guidance through enrollment questions.',
+    title: 'Private pay accepted',
+    body: 'Straightforward private pay arrangements with transparent pricing and flexible scheduling, so families know what to expect from the first conversation.',
     Icon: BadgeCheck,
   },
   {

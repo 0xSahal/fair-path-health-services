@@ -10,7 +10,7 @@ import { SectionTag } from '@/components/ui/SectionTag'
 export const metadata: Metadata = {
   title: 'Payment & Insurance | Fair Path Health Services',
   description:
-    'Private pay pricing and transparency for Georgia in-home care. Medicaid and insurance options are coming soon. Contact Fair Path for a consultation.',
+    'Private pay pricing and transparency for Georgia in-home care. Contact Fair Path for a consultation.',
 }
 
 const AVAILABLE_BENEFITS = [
@@ -27,10 +27,7 @@ const PRICING_FACTORS = [
   'Coordination requirements and coverage level',
 ] as const
 
-const COMING_SOON_OPTIONS = [
-  'Medicaid CCSP/SOURCE',
-  'Insurance Coverage',
-] as const
+const COMING_SOON_OPTIONS = ['Insurance Coverage'] as const
 
 export default function PaymentAndInsurancePage() {
   const pricingCardClass =
@@ -63,8 +60,8 @@ export default function PaymentAndInsurancePage() {
                   We Make Payment Simple
                 </h1>
                 <p className="mt-4 font-body text-lg text-fp-text-muted">
-                  We believe quality care should be accessible. We currently accept Private Pay and are actively working to
-                  expand our payment options for Georgia families.
+                  We believe quality care should be accessible. We accept private pay only, with clear pricing and flexible
+                  plans tailored to your family&apos;s needs.
                 </p>
               </Reveal>
             </div>

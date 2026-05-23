@@ -101,32 +101,6 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   },
   {
-    slug: 'understanding-georgia-medicaid-ccsp',
-    title: 'Understanding Georgia Medicaid CCSP: What You Need to Know',
-    category: 'Payment & Insurance',
-    date: '2026-04-10',
-    excerpt:
-      'CCSP can help families access support at home. Here’s a plain-language overview and how Fair Path helps you navigate the process.',
-    image: {
-      src: '/images/payment.webp',
-      alt: 'Planning payment and Medicaid coverage for care at home',
-    },
-    author: { name: 'Fair Path Care Team', title: 'Care Coordination' },
-    content: [
-      { type: 'p', text: 'CCSP is designed to help eligible Georgians receive care services while remaining at home.' },
-      { type: 'h2', text: 'What CCSP generally supports' },
-      { type: 'ul', items: ['Personal care support', 'Help with daily routines', 'Care coordination and planning'] },
-      { type: 'p', text: 'Eligibility depends on care needs and financial guidelines. A free consultation helps clarify the best next step.' },
-    ],
-    relatedSlugs: ['difference-between-hha-and-pca'],
-    seo: {
-      title: 'Georgia Medicaid CCSP Overview | Fair Path Health Services',
-      description:
-        'A clear overview of Georgia Medicaid CCSP and how it can support in-home care — plus how families can get guidance and next steps.',
-      keywords: ['Georgia Medicaid CCSP', 'CCSP program', 'Medicaid home care'],
-    },
-  },
-  {
     slug: 'difference-between-hha-and-pca',
     title: 'The Difference Between a Home Health Aide and a Personal Care Aide',
     category: 'Our Services',

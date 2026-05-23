@@ -42,12 +42,8 @@ export const FAQ_CATEGORIES: ResourceFaq[] = [
     category: 'Payment & Insurance',
     items: [
       {
-        q: 'Does Medicaid cover all types of care you offer?',
-        a: 'Coverage depends on eligibility and program guidelines. We’ll help you understand what may be covered under CCSP/SOURCE and other options.',
-      },
-      {
-        q: 'Do you accept private pay?',
-        a: 'Yes. We offer flexible private pay options based on hours and care needs.',
+        q: 'What payment methods do you accept?',
+        a: 'We accept private pay only. We offer flexible options based on hours and care needs, and we’re happy to walk you through pricing during a free consultation.',
       },
     ],
   },
