@@ -121,7 +121,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'transportation',
     icon: 'Car',
     shortDescription:
-      'Safe, reliable rides to appointments, errands, and community outings — with attentive assistance along the way.',
+      'Safe, reliable rides to appointments, errands, and community outings, with attentive assistance along the way.',
   },
   {
     id: '4',
@@ -145,7 +145,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'memory-care',
     icon: 'Brain',
     shortDescription:
-      'Patient, specialized support for Alzheimer’s and dementia — routines, safety, and calm communication at every step.',
+      'Patient, specialized support for Alzheimer’s and dementia, with routines, safety, and calm communication at every step.',
   },
   {
     id: '9',
@@ -153,7 +153,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'respite-care',
     icon: 'Coffee',
     shortDescription:
-      'Short-term relief for family caregivers — dependable coverage so you can rest, travel, or handle life’s demands.',
+      'Short-term relief for family caregivers, with dependable coverage so you can rest, travel, or handle life’s demands.',
   },
   {
     id: '11',
@@ -161,7 +161,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'consulting',
     icon: 'MessagesSquare',
     shortDescription:
-      'Guidance for care planning, resources, and navigating payment options — tailored to your situation and timeline.',
+      'Guidance for care planning, resources, and navigating payment options, tailored to your situation and timeline.',
   },
   {
     id: '12',
@@ -200,7 +200,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     quote:
-      'From the first phone call, Fair Path treated us like family. Dad’s caregiver is punctual, kind, and incredibly skilled — we finally sleep through the night knowing he is in good hands.',
+      'From the first phone call, Fair Path treated us like family. Dad’s caregiver is punctual, kind, and incredibly skilled, and we finally sleep through the night knowing he is in good hands.',
     name: 'Eleanor V.',
     city: 'Decatur, GA',
     initial: 'E',
@@ -255,7 +255,7 @@ export const FAQ_ITEMS: FAQ[] = [
     id: '1',
     question: 'What is private home care and who is it for?',
     answer:
-      "Private home care provides professional support services in a person's own home — for seniors, individuals recovering from illness, or those with disabilities. It enables people to maintain independence and dignity without relocating to a facility.",
+      "Private home care provides professional support services in a person's own home, for seniors, individuals recovering from illness, or those with disabilities. It enables people to maintain independence and dignity without relocating to a facility.",
   },
   {
     id: '2',
@@ -285,7 +285,7 @@ export const FAQ_ITEMS: FAQ[] = [
     id: '6',
     question: 'Which Georgia counties do you currently serve?',
     answer:
-      "We proudly serve Carroll, Cobb, Coweta, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, and Paulding counties. Contact us if your county isn't listed — we're expanding and may still be able to help.",
+      "We proudly serve Carroll, Cobb, Coweta, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, and Paulding counties. Contact us if your county isn't listed; we're expanding and may still be able to help.",
   },
 ]
 

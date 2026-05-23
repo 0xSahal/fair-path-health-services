@@ -97,7 +97,7 @@ export default function ContactPageForm() {
           Message sent.
         </p>
         <p className="mt-2 font-body text-fp-text-muted">
-          Thank you — our team will respond as quickly as possible.
+          Thank you. Our team will respond as quickly as possible.
         </p>
       </div>
     )

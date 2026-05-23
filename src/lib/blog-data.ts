@@ -57,7 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
     seo: {
       title: '10 Signs Your Loved One May Need In‑Home Care | Fair Path Health Services',
       description:
-        'Learn the most common signs seniors may need in-home care: falls risk, medication issues, isolation, missed meals, and more — plus what to do next.',
+        'Learn the most common signs seniors may need in-home care: falls risk, medication issues, isolation, missed meals, and more, plus what to do next.',
       keywords: ['in-home care signs', 'senior care', 'care planning', 'home care Georgia'],
     },
   },
@@ -121,7 +121,7 @@ export const BLOG_POSTS: BlogPost[] = [
     seo: {
       title: 'HHA vs PCA | Fair Path Health Services',
       description:
-        'Understand the difference between a home health aide and a personal care aide — and how to choose the right in-home support for your family.',
+        'Understand the difference between a home health aide and a personal care aide, and how to choose the right in-home support for your family.',
       keywords: ['HHA vs PCA', 'home health aide', 'personal care aide'],
     },
   },

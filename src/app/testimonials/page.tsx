@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
                     </div>
                     <div>
                       <p className="font-display text-lg font-semibold text-fp-text-primary">
-                        {t.name} — {t.city}
+                        {t.name}, {t.city}
                       </p>
                       <p className="font-body text-sm text-fp-text-muted">{t.role}</p>
                       <Link

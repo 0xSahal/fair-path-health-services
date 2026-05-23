@@ -95,7 +95,7 @@ export default function ContactSection() {
 
             <p className="mt-6 mb-8 font-body text-[16px] leading-[1.75] text-slate">
               Our care coordinators are standing by to answer every question
-              and help you find the right support — at absolutely no obligation
+              and help you find the right support at absolutely no obligation
               to your family.
             </p>
 

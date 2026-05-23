@@ -91,7 +91,7 @@ export default function CareersApplicationForm() {
           Application received.
         </p>
         <p className="mt-2 font-body text-fp-text-muted">
-          Thank you for applying — our team will reach out soon.
+          Thank you for applying. Our team will reach out soon.
         </p>
       </div>
     )

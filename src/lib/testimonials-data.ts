@@ -26,7 +26,7 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     serviceSlug: 'personal-care',
     rating: 5,
     quote:
-      "Fair Path truly changed our lives. The caregiver they matched with my mother is like a second family member — patient, professional, and genuinely caring. We finally have peace of mind.",
+      "Fair Path truly changed our lives. The caregiver they matched with my mother is like a second family member, patient, professional, and genuinely caring. We finally have peace of mind.",
   },
   {
     id: 't2',
@@ -46,7 +46,7 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     serviceSlug: 'nursing-care',
     rating: 5,
     quote:
-      'After discharge, we needed skilled support at home. The nurse was thorough and calm — we felt safe and supported from day one.',
+      'After discharge, we needed skilled support at home. The nurse was thorough and calm, and we felt safe and supported from day one.',
   },
   {
     id: 't5',

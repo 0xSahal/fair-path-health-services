@@ -71,7 +71,7 @@ export default function ServicesSection() {
         <SectionHeader
           label="What We Offer"
           title="Comprehensive Home Care Services"
-          subtitle="Tailored care solutions designed to support independence, dignity, and quality of life — in the comfort of your own home."
+          subtitle="Tailored care solutions designed to support independence, dignity, and quality of life, in the comfort of your own home."
           align="center"
         />
 

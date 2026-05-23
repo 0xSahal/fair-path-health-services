@@ -9,8 +9,8 @@ const VALUES = ['Compassion', 'Care', 'Integrity', 'Wellness'] as const
 
 const STORY_PARAGRAPHS: string[] = [
   'Fair Path Health Services was founded on a simple but powerful belief: every individual deserves to age and heal with dignity, in the comfort of the place they call home.',
-  'For over seven years we have walked alongside Georgia families during some of life\u2019s most tender moments — providing professional, deeply personal care that honors each client as a whole person, not just a list of needs.',
-  'Today, our team of trained caregivers, nurses, and care coordinators serves more than 500 families across ten Metro Atlanta counties — and our standard remains exactly the same as on day one: treat every client like our own family.',
+  'For over seven years we have walked alongside Georgia families during some of life\u2019s most tender moments, providing professional, deeply personal care that honors each client as a whole person, not just a list of needs.',
+  'Today, our team of trained caregivers, nurses, and care coordinators serves more than 500 families across ten Metro Atlanta counties, and our standard remains exactly the same as on day one: treat every client like our own family.',
 ]
 
 export default function AboutSection() {

@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
     description:
-      'Luxury-minded home care rooted in compassion, integrity, and clinical excellence — serving families across Georgia.',
+      'Luxury-minded home care rooted in compassion, integrity, and clinical excellence, serving families across Georgia.',
     images: [
       {
         url: BRAND_LOGO.src,

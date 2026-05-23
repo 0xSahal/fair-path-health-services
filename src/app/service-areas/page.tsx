@@ -10,7 +10,7 @@ import { SERVICE_AREAS } from '@/lib/service-areas-data'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Service Areas — 10 Georgia Counties | Fair Path Health Services',
+  title: 'Service Areas: 10 Georgia Counties | Fair Path Health Services',
   description:
     'Fair Path Health Services proudly serves 10 Georgia counties. View key cities by county and request a free assessment.',
 }
@@ -46,10 +46,10 @@ export default function ServiceAreasPage() {
             <Reveal className="mx-auto max-w-3xl text-center">
               <SectionTag className="text-center">Where We Serve</SectionTag>
               <h1 className="mt-3 font-display text-h1 font-semibold text-fp-text-primary">
-                Service Areas — 10 Georgia Counties
+                Service Areas: 10 Georgia Counties
               </h1>
               <p className="mt-4 font-body text-lg text-fp-text-muted">
-                Availability varies by schedule and care level — request a free assessment to confirm the best coverage for your home.
+                Availability varies by schedule and care level. Request a free assessment to confirm the best coverage for your home.
               </p>
             </Reveal>
 

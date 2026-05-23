@@ -12,7 +12,7 @@ const STEPS: Step[] = [
     number: '1',
     title: 'Reach Out',
     description:
-      'Call us or complete our simple form. We respond within hours — because your family\u2019s needs simply cannot wait.',
+      'Call us or complete our simple form. We respond within hours, because your family\u2019s needs simply cannot wait.',
   },
   {
     number: '2',
@@ -24,7 +24,7 @@ const STEPS: Step[] = [
     number: '3',
     title: 'Care Begins',
     description:
-      'Your dedicated, vetted caregiver arrives — ready to become a trusted, reliable presence in your family\u2019s daily life.',
+      'Your dedicated, vetted caregiver arrives, ready to become a trusted, reliable presence in your family\u2019s daily life.',
   },
 ]
 
