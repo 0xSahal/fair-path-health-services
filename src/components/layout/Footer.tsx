@@ -19,9 +19,7 @@ const SERVICES_LINKS = [
   { label: 'Transportation', href: '/services/transportation' },
   { label: 'Nursing Care', href: '/services/nursing-care' },
   { label: 'Companion & Homemaking', href: '/services/companion-homemaking' },
-  { label: 'DBHDD Services', href: '/services/developmental-disabilities' },
   { label: 'Care Coordination', href: '/services/care-coordination' },
-  { label: 'Pharmacy Services', href: '/services/pharmacy-services' },
   { label: 'Respite Care', href: '/services/respite-care' },
 ]
 
@@ -31,6 +29,12 @@ const LEGAL = [
   { label: 'Sitemap', href: '/sitemap' },
   { label: 'Accessibility', href: '/accessibility' },
 ]
+
+/** Lucide glyphs vary in visual weight at the same box size — lighter icons need a slightly larger box. */
+const CONTACT_HOURS_ICON =
+  'mt-0.5 shrink-0 text-fp-copper size-4 stroke-[2]'
+const CONTACT_HOURS_ICON_OPTICAL =
+  'mt-0.5 shrink-0 text-fp-copper size-5 stroke-[2.25]'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -59,7 +63,7 @@ export default function Footer() {
                 {SITE_CONFIG.tagline}
               </p>
               <p className="mt-4 max-w-[420px] font-body text-[14px] leading-relaxed text-fp-cream/75">
-                Fair Path Health Services provides premium in-home care across Georgia—
+                Fair Path Health Services provides premium in-home care across Georgia,
                 combining compassion, clinical excellence, and meticulous coordination so
                 families feel supported at every step.
               </p>
@@ -112,13 +116,13 @@ export default function Footer() {
 
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <MapPin className="mt-0.5 h-4 w-4 text-fp-copper" aria-hidden />
+                  <MapPin className={CONTACT_HOURS_ICON_OPTICAL} aria-hidden />
                   <span className="font-body text-[14px] text-fp-cream/80">
                     {SITE_CONFIG.address}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Phone className="mt-0.5 h-4 w-4 text-fp-copper" aria-hidden />
+                  <Phone className={CONTACT_HOURS_ICON} aria-hidden />
                   <a
                     href={`tel:${SITE_CONFIG.phoneRaw}`}
                     className="font-body text-[14px] text-fp-cream/80 transition-colors hover:text-fp-copper-light"
@@ -128,7 +132,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Mail className="mt-0.5 h-4 w-4 text-fp-copper" aria-hidden />
+                  <Mail className={CONTACT_HOURS_ICON} aria-hidden />
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
                     className="font-body text-[14px] text-fp-cream/80 transition-colors hover:text-fp-copper-light"
@@ -137,7 +141,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Briefcase className="mt-0.5 h-4 w-4 text-fp-copper" aria-hidden />
+                  <Briefcase className={CONTACT_HOURS_ICON_OPTICAL} aria-hidden />
                   <span className="font-body text-[14px] text-fp-cream/80">
                     Mon–Fri 8AM–6PM, Sat 9AM–3PM, Sun Emergency Only
                   </span>

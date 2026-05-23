@@ -26,7 +26,6 @@ const CONDITIONS = [
   'Dementia/Alzheimer’s',
   'Mobility limitations',
   'Post-surgery recovery',
-  'Developmental disability',
   'Other',
 ] as const
 
@@ -106,7 +105,7 @@ export default function ReferClientForm() {
           Referral received.
         </p>
         <p className="mt-2 font-body text-fp-text-muted">
-          Thank you — our team will follow up soon.
+          Thank you. Our team will follow up soon.
         </p>
       </div>
     )

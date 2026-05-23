@@ -95,7 +95,7 @@ export default function ContactSection() {
 
             <p className="mt-6 mb-8 font-body text-[16px] leading-[1.75] text-slate">
               Our care coordinators are standing by to answer every question
-              and help you find the right support — at absolutely no obligation
+              and help you find the right support at absolutely no obligation
               to your family.
             </p>
 
@@ -130,22 +130,6 @@ export default function ContactSection() {
               </li>
             </ul>
 
-            <div className="mt-8 rounded-xl border-l-[4px] border-sage bg-white p-5 shadow-card">
-              <div className="flex items-center gap-2">
-                <CheckCircle2
-                  className="text-sage"
-                  size={20}
-                  aria-hidden
-                />
-                <p className="text-[13px] font-bold uppercase tracking-wide text-sage">
-                  Now Accepting Medicaid
-                </p>
-              </div>
-              <p className="mt-1.5 text-[13px] text-slate">
-                We accept CCSP, SOURCE, NOW/COMP, and private pay. We handle
-                all paperwork.
-              </p>
-            </div>
           </div>
 
           {/* Form column */}

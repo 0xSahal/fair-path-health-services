@@ -8,8 +8,8 @@ import { SlideInWhenVisible } from '../FadeInWhenVisible'
 
 const ROWS = [
   {
-    title: 'Medicaid accepted',
-    body: 'Certified across Georgia Medicaid pathways families rely on, including CCSP, SOURCE, NOW, and COMP, with transparent guidance through enrollment questions.',
+    title: 'Private pay accepted',
+    body: 'Straightforward private pay arrangements with transparent pricing and flexible scheduling, so families know what to expect from the first conversation.',
     Icon: BadgeCheck,
   },
   {
@@ -24,7 +24,7 @@ const ROWS = [
   },
   {
     title: 'Local Georgia team',
-    body: 'Douglasville-rooted leadership with coordinators who know the counties we serve. When weather, traffic, or life shifts plans, you are talking to neighbors, not a distant call center.',
+    body: 'Grayson County-rooted leadership with coordinators who know the counties we serve. When weather, traffic, or life shifts plans, you are talking to neighbors, not a distant call center.',
     Icon: MapPin,
   },
 ] as const

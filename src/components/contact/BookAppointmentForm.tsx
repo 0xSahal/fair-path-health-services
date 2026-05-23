@@ -29,7 +29,6 @@ const CARE_TYPES = [
   { value: 'companion-homemaking', label: 'Companion & Homemaking' },
   { value: 'transportation', label: 'Transportation' },
   { value: 'memory-care', label: 'Memory Care Support' },
-  { value: 'dbhdd', label: 'DBHDD Services' },
   { value: 'care-coordination', label: 'Care Coordination' },
   { value: 'not-sure', label: 'Not sure yet' },
 ] as const

@@ -83,7 +83,7 @@ const slides = [
       </>
     ),
     sub:
-      'Accepting Medicaid CCSP/SOURCE, Aid & Attendance, and Private Pay, making quality care accessible to every family.',
+      'We accept private pay only, with flexible plans that make quality in-home care accessible for your family.',
     ctas: (
       <>
         <Link
@@ -108,7 +108,7 @@ const slides = [
 function MobileVideoHero() {
   return (
     <div
-      aria-label="Fair Path Health Services — caring for your loved ones at home"
+      aria-label="Fair Path Health Services, caring for your loved ones at home"
       className="relative min-h-[calc(100svh-var(--fp-nav-height))] w-full overflow-hidden md:hidden"
     >
       {/* Background video. Animated GIF is layered behind as a graceful

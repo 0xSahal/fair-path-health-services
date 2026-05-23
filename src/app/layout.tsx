@@ -51,13 +51,12 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description:
-    'Fair Path Health Services provides compassionate, professional in-home care across 10 Georgia counties. Accepting Medicaid CCSP, SOURCE, and Private Pay.',
+    'Fair Path Health Services provides compassionate, professional in-home care across 10 Georgia counties. We accept private pay only.',
   keywords: [
     'home care georgia',
     'in-home care douglasville',
-    'medicaid home care georgia',
+    'private pay home care georgia',
     'elder care atlanta',
-    'DBHDD services georgia',
     'personal care aide georgia',
   ],
   authors: [{ name: SITE_CONFIG.name, url: siteUrl }],
@@ -69,7 +68,7 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
     description:
-      'Luxury-minded home care rooted in compassion, integrity, and clinical excellence — serving families across Georgia.',
+      'Luxury-minded home care rooted in compassion, integrity, and clinical excellence, serving families across Georgia.',
     images: [
       {
         url: BRAND_LOGO.src,

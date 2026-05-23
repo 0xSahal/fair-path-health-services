@@ -42,16 +42,8 @@ export const FAQ_CATEGORIES: ResourceFaq[] = [
     category: 'Payment & Insurance',
     items: [
       {
-        q: 'Does Medicaid cover all types of care you offer?',
-        a: 'Coverage depends on eligibility and program guidelines. We’ll help you understand what may be covered under CCSP/SOURCE and other options.',
-      },
-      {
-        q: 'Do you accept private pay?',
-        a: 'Yes. We offer flexible private pay options based on hours and care needs.',
-      },
-      {
-        q: 'Can you help with Aid & Attendance for veterans?',
-        a: 'Yes. We can guide families through a no-cost conversation about eligibility and next steps.',
+        q: 'What payment methods do you accept?',
+        a: 'We accept private pay only. We offer flexible options based on hours and care needs, and we’re happy to walk you through pricing during a free consultation.',
       },
     ],
   },
@@ -86,23 +78,6 @@ export const FAQ_CATEGORIES: ResourceFaq[] = [
       {
         q: 'Can care plans be adjusted over time?',
         a: 'Yes. Care plans evolve as needs change. We review and adjust to keep support aligned with goals.',
-      },
-    ],
-  },
-  {
-    category: 'DBHDD Services',
-    items: [
-      {
-        q: 'Do you provide NOW/COMP waiver supports?',
-        a: 'Yes. We support DBHDD-related services including waiver-aligned supports and family respite depending on program requirements.',
-      },
-      {
-        q: 'What ages do you support for I/DD services?',
-        a: 'Support depends on program eligibility and needs. We’ll discuss your situation and recommend next steps.',
-      },
-      {
-        q: 'Can you help families understand program options?',
-        a: 'Yes. We provide guidance and coordination to help reduce confusion and improve continuity.',
       },
     ],
   },
@@ -150,11 +125,9 @@ export const HELPFUL_LINKS = {
     { label: 'Georgia Department of Public Health (DPH)', href: 'https://dph.georgia.gov/' },
   ],
   'Care Programs': [
-    { label: 'Georgia DBHDD', href: 'https://dbhdd.georgia.gov/' },
     { label: 'Home Care Association of America (HCAOA)', href: 'https://www.hcaoa.org/' },
     { label: 'Georgia Association for Home Health Agencies (GAHHA)', href: 'https://gahha.org/' },
   ],
-  Veterans: [{ label: 'VA Benefits', href: 'https://www.va.gov/' }],
   Local: [
     { label: 'Area Agency on Aging (Georgia)', href: 'https://aging.georgia.gov/' },
   ],

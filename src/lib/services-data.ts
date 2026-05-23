@@ -144,7 +144,7 @@ export const SERVICES: ServiceDetail[] = [
         'post surgical home care',
       ],
     },
-    relatedSlugs: ['pharmacy-services', 'care-coordination', 'personal-care'],
+    relatedSlugs: ['care-coordination', 'personal-care', 'post-acute-care'],
   },
   {
     slug: 'companion-homemaking',
@@ -259,65 +259,6 @@ export const SERVICES: ServiceDetail[] = [
     relatedSlugs: ['personal-care', 'companion-homemaking', 'care-coordination'],
   },
   {
-    slug: 'developmental-disabilities',
-    title: 'Developmental Disabilities Services (DBHDD)',
-    category: 'Specialized Programs',
-    icon: 'Accessibility',
-    description:
-      "Fair Path is a certified provider of Georgia's DBHDD (Department of Behavioral Health and Developmental Disabilities) programs, offering specialized support for individuals with intellectual and developmental disabilities.",
-    heroImage: {
-      src: '/images/service-dbhdd.webp',
-      alt: 'Support professional and young woman talking together on a sofa in a bright living room',
-    },
-    badges: [{ label: 'Certified DBHDD Provider', detail: 'Georgia DBHDD programs' }],
-    keyBenefits: [
-      'Person-centered support focused on independence',
-      'Consistency, structure, and safety at home and in the community',
-      'Support for families and caregivers',
-      'Aligned with waiver program expectations (NOW/COMP)',
-    ],
-    whatsIncluded: [
-      'NOW Waiver services',
-      'COMP Waiver services',
-      'Community living support',
-      'Employment support',
-      'Behavioral support services',
-      'Life skills training',
-      'Respite care for families',
-      'Day support activities',
-    ],
-    whoBenefits: [
-      {
-        title: 'Individuals with I/DD',
-        description:
-          'Support that respects autonomy while building confidence and daily life skills.',
-      },
-      {
-        title: 'Families navigating waiver services',
-        description:
-          'Guidance and consistent support to reduce overwhelm and improve continuity of care.',
-      },
-      {
-        title: 'Adults building community independence',
-        description:
-          'Goal-driven support for routines, employment readiness, and safe engagement.',
-      },
-    ],
-    seo: {
-      title: 'DBHDD Developmental Disabilities Services | Fair Path Health Services',
-      description:
-        'Certified DBHDD provider in Georgia offering NOW/COMP waiver supports, community living, employment support, life skills training, behavioral supports, and respite.',
-      keywords: [
-        'DBHDD services',
-        'NOW waiver',
-        'COMP waiver',
-        'developmental disabilities support Georgia',
-        'community living support',
-      ],
-    },
-    relatedSlugs: ['respite-care', 'care-coordination', 'consulting'],
-  },
-  {
     slug: 'care-coordination',
     title: 'Care Coordination Services',
     category: 'Medical & Skilled Care',
@@ -371,63 +312,7 @@ export const SERVICES: ServiceDetail[] = [
         'family updates home care',
       ],
     },
-    relatedSlugs: ['personal-care', 'nursing-care', 'pharmacy-services'],
-  },
-  {
-    slug: 'pharmacy-services',
-    title: 'Pharmacy Services',
-    category: 'Medical & Skilled Care',
-    icon: 'Pill',
-    description:
-      'Bridging the gap between healthcare providers and patients, our pharmacy services ensure medications are managed safely, correctly, and on schedule.',
-    heroImage: {
-      src: '/images/service-pharmacy.webp',
-      alt: 'Pharmacist handing a bag of prescriptions to a smiling senior customer at the pharmacy counter',
-    },
-    keyBenefits: [
-      'Improves adherence and routine',
-      'Reduces medication errors',
-      'Supports safer transitions of care',
-      'Peace of mind for families',
-    ],
-    whatsIncluded: [
-      'Medication review & reconciliation',
-      'Prescription pickup & delivery',
-      'Medication organizer setup',
-      'Compliance monitoring',
-      'Drug interaction screening',
-      'Caregiver medication training',
-    ],
-    whoBenefits: [
-      {
-        title: 'Clients on multiple medications',
-        description:
-          'Better organization and monitoring to keep schedules clear and accurate.',
-      },
-      {
-        title: 'Post-discharge patients',
-        description:
-          'Support during medication changes and transitions after hospitalization.',
-      },
-      {
-        title: 'Families seeking added safety',
-        description:
-          'Confidence that medications are reviewed, organized, and followed correctly.',
-      },
-    ],
-    seo: {
-      title: 'In-Home Pharmacy Support | Fair Path Health Services',
-      description:
-        'Medication support in Georgia: review, reconciliation, organizer setup, pickup/delivery, interaction screening, and adherence monitoring.',
-      keywords: [
-        'pharmacy services',
-        'medication reconciliation',
-        'medication reminders',
-        'pill organizer setup',
-        'drug interaction screening',
-      ],
-    },
-    relatedSlugs: ['nursing-care', 'care-coordination', 'personal-care'],
+    relatedSlugs: ['personal-care', 'nursing-care', 'memory-care'],
   },
   {
     slug: 'memory-care',
@@ -540,65 +425,6 @@ export const SERVICES: ServiceDetail[] = [
     relatedSlugs: ['memory-care', 'companion-homemaking', 'personal-care'],
   },
   {
-    slug: 'aid-attendance',
-    title: 'Aid & Attendance Veterans Benefit',
-    category: 'Specialized Programs',
-    icon: 'Medal',
-    description:
-      'Eligible veterans and surviving spouses may qualify for VA benefits covering in-home care costs. Fair Path helps families navigate this process at no cost.',
-    heroImage: {
-      src: '/images/service-aid-attendence.webp',
-      alt: 'Professional guiding a veteran couple through benefit paperwork at a home dining table',
-    },
-    keyBenefits: [
-      'Helps make quality care more affordable',
-      'Guided paperwork and documentation support',
-      'Coordination once approved',
-      'Clear answers and no-pressure guidance',
-    ],
-    whatsIncluded: [
-      'Eligibility assessment (free)',
-      'Application guidance & documentation',
-      'Service coordination once approved',
-      'All personal care & skilled nursing services covered under benefit',
-    ],
-    eligibilityChecklist: [
-      'Veteran served at least 90 days active duty (with at least one day during wartime) OR is a surviving spouse',
-      'Needs help with daily activities such as bathing, dressing, or mobility',
-      'Has significant health-related limitations requiring regular assistance',
-      'Meets VA income and asset guidelines (varies by situation)',
-    ],
-    whoBenefits: [
-      {
-        title: 'Eligible veterans',
-        description:
-          'A pathway to help fund in-home care while staying safe and comfortable at home.',
-      },
-      {
-        title: 'Surviving spouses',
-        description:
-          'Guidance navigating a complex process to reduce stress and uncertainty.',
-      },
-      {
-        title: 'Families planning long-term support',
-        description:
-          'A clearer strategy for affordability and care continuity.',
-      },
-    ],
-    seo: {
-      title: 'Aid & Attendance Benefit Help | Fair Path Health Services',
-      description:
-        'Aid & Attendance guidance in Georgia: free eligibility assessment, application support, documentation help, and coordinated in-home services once approved.',
-      keywords: [
-        'aid and attendance',
-        'veterans home care benefit',
-        'VA aid and attendance help',
-        'in-home care veterans benefit Georgia',
-      ],
-    },
-    relatedSlugs: ['personal-care', 'nursing-care', 'consulting'],
-  },
-  {
     slug: 'consulting',
     title: 'Healthcare Consulting Services',
     category: 'Medical & Skilled Care',
@@ -650,10 +476,8 @@ export const SERVICES: ServiceDetail[] = [
         'facility selection guidance',
       ],
     },
-    relatedSlugs: ['care-coordination', 'aid-attendance', 'pharmacy-services'],
+    relatedSlugs: ['care-coordination', 'personal-care', 'nursing-care'],
   },
-
-  /* 12th page to complete the full directory set */
   {
     slug: 'post-acute-care',
     title: 'Post‑Acute & Transitional Care',
@@ -707,7 +531,7 @@ export const SERVICES: ServiceDetail[] = [
         'recovery support at home',
       ],
     },
-    relatedSlugs: ['nursing-care', 'pharmacy-services', 'care-coordination'],
+    relatedSlugs: ['nursing-care', 'care-coordination', 'personal-care'],
   },
 ]
 

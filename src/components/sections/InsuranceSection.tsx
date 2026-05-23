@@ -31,7 +31,7 @@ export default function InsuranceSection() {
         <SectionHeader
           label="Payment Made Easy"
           title="We Make Payment Simple"
-          subtitle="We work directly with Medicaid and accepted programs — our team handles all paperwork so you can focus on your loved one."
+          subtitle="We accept private pay only. Our team explains pricing clearly so you can focus on your loved one."
           align="center"
         />
 

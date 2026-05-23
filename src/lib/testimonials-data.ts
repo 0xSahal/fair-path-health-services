@@ -8,12 +8,9 @@ export type TestimonialItem = {
     | 'nursing-care'
     | 'companion-homemaking'
     | 'transportation'
-    | 'developmental-disabilities'
     | 'care-coordination'
-    | 'pharmacy-services'
     | 'memory-care'
     | 'respite-care'
-    | 'aid-attendance'
     | 'consulting'
     | 'post-acute-care'
   rating: 5 | 4
@@ -29,7 +26,7 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     serviceSlug: 'personal-care',
     rating: 5,
     quote:
-      "Fair Path truly changed our lives. The caregiver they matched with my mother is like a second family member — patient, professional, and genuinely caring. We finally have peace of mind.",
+      "Fair Path truly changed our lives. The caregiver they matched with my mother is like a second family member, patient, professional, and genuinely caring. We finally have peace of mind.",
   },
   {
     id: 't2',
@@ -42,16 +39,6 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
       'From the very first call, I knew this was different. They listened, asked the right questions, and within 3 days we had the perfect caregiver. The whole family feels relieved.',
   },
   {
-    id: 't3',
-    name: 'Denise W.',
-    city: 'Marietta, GA',
-    role: 'Parent of Client',
-    serviceSlug: 'developmental-disabilities',
-    rating: 5,
-    quote:
-      "The DBHDD services they provide for my son have been exceptional. The team is knowledgeable, compassionate, and truly understands his needs. I can't recommend them enough.",
-  },
-  {
     id: 't4',
     name: 'Eleanor V.',
     city: 'Decatur, GA',
@@ -59,7 +46,7 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     serviceSlug: 'nursing-care',
     rating: 5,
     quote:
-      'After discharge, we needed skilled support at home. The nurse was thorough and calm — we felt safe and supported from day one.',
+      'After discharge, we needed skilled support at home. The nurse was thorough and calm, and we felt safe and supported from day one.',
   },
   {
     id: 't5',
@@ -70,16 +57,6 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     rating: 5,
     quote:
       'The companionship and homemaking support has been a blessing. The home is tidy, meals are handled, and my mom looks forward to visits.',
-  },
-  {
-    id: 't6',
-    name: 'Priya S.',
-    city: 'Alpharetta, GA',
-    role: 'Family of Client',
-    serviceSlug: 'pharmacy-services',
-    rating: 5,
-    quote:
-      'Medication changes were overwhelming. Fair Path helped organize everything and keep us on schedule. The improvement was immediate.',
   },
   {
     id: 't7',
@@ -110,16 +87,6 @@ export const TESTIMONIALS_PAGE: TestimonialItem[] = [
     rating: 5,
     quote:
       "Respite care gave me the break I desperately needed. I could rest knowing my father was safe and cared for.",
-  },
-  {
-    id: 't10',
-    name: 'Walter B.',
-    city: 'Cumming, GA',
-    role: 'Veteran',
-    serviceSlug: 'aid-attendance',
-    rating: 5,
-    quote:
-      'They explained Aid & Attendance clearly and helped us navigate the paperwork. The guidance was priceless.',
   },
   {
     id: 't11',

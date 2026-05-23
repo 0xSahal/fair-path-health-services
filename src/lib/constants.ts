@@ -43,14 +43,8 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Transportation', href: '/services/transportation' },
       { label: 'Nursing Care', href: '/services/nursing-care' },
       { label: 'Care Coordination', href: '/services/care-coordination' },
-      { label: 'Pharmacy Services', href: '/services/pharmacy-services' },
-      {
-        label: 'Developmental Disabilities (DBHDD)',
-        href: '/services/developmental-disabilities',
-      },
       { label: 'Memory Care Support', href: '/services/memory-care' },
       { label: 'Respite Care', href: '/services/respite-care' },
-      { label: 'Aid & Attendance', href: '/services/aid-attendance' },
       { label: 'Consulting Services', href: '/services/consulting' },
     ],
   },
@@ -91,20 +85,13 @@ export const SERVICES_MEGA_MENU = {
           href: '/services/care-coordination',
           icon: 'CalendarCheck',
         },
-        { label: 'Pharmacy Services', href: '/services/pharmacy-services', icon: 'Pill' },
       ],
     },
     {
       heading: 'Specialized Programs',
       items: [
-        {
-          label: 'Developmental Disabilities (DBHDD)',
-          href: '/services/developmental-disabilities',
-          icon: 'Accessibility',
-        },
         { label: 'Memory Care Support', href: '/services/memory-care', icon: 'Brain' },
         { label: 'Respite Care', href: '/services/respite-care', icon: 'Coffee' },
-        { label: 'Aid & Attendance', href: '/services/aid-attendance', icon: 'Medal' },
         { label: 'Consulting Services', href: '/services/consulting', icon: 'MessagesSquare' },
       ],
     },
@@ -134,7 +121,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'transportation',
     icon: 'Car',
     shortDescription:
-      'Safe, reliable rides to appointments, errands, and community outings — with attentive assistance along the way.',
+      'Safe, reliable rides to appointments, errands, and community outings, with attentive assistance along the way.',
   },
   {
     id: '4',
@@ -153,28 +140,12 @@ export const SERVICE_ITEMS: Service[] = [
       'Scheduling, documentation, and communication between family, caregivers, and providers to ensure seamless care.',
   },
   {
-    id: '6',
-    name: 'Pharmacy Services',
-    slug: 'pharmacy-services',
-    icon: 'Pill',
-    shortDescription:
-      'Medication support and coordination designed to reduce errors, improve adherence, and support better outcomes.',
-  },
-  {
-    id: '7',
-    name: 'Developmental Disabilities (DBHDD)',
-    slug: 'developmental-disabilities',
-    icon: 'Accessibility',
-    shortDescription:
-      'Individualized, respectful supports aligned with Georgia DBHDD expectations — empowering independence and safety.',
-  },
-  {
     id: '8',
     name: 'Memory Care Support',
     slug: 'memory-care',
     icon: 'Brain',
     shortDescription:
-      'Patient, specialized support for Alzheimer’s and dementia — routines, safety, and calm communication at every step.',
+      'Patient, specialized support for Alzheimer’s and dementia, with routines, safety, and calm communication at every step.',
   },
   {
     id: '9',
@@ -182,15 +153,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'respite-care',
     icon: 'Coffee',
     shortDescription:
-      'Short-term relief for family caregivers — dependable coverage so you can rest, travel, or handle life’s demands.',
-  },
-  {
-    id: '10',
-    name: 'Aid & Attendance',
-    slug: 'aid-attendance',
-    icon: 'Medal',
-    shortDescription:
-      'We help families understand this Veterans benefit that may help fund in-home care for eligible clients.',
+      'Short-term relief for family caregivers, with dependable coverage so you can rest, travel, or handle life’s demands.',
   },
   {
     id: '11',
@@ -198,7 +161,7 @@ export const SERVICE_ITEMS: Service[] = [
     slug: 'consulting',
     icon: 'MessagesSquare',
     shortDescription:
-      'Guidance for care planning, resources, and navigating payment options — tailored to your situation and timeline.',
+      'Guidance for care planning, resources, and navigating payment options, tailored to your situation and timeline.',
   },
   {
     id: '12',
@@ -237,7 +200,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
     quote:
-      'From the first phone call, Fair Path treated us like family. Dad’s caregiver is punctual, kind, and incredibly skilled — we finally sleep through the night knowing he is in good hands.',
+      'From the first phone call, Fair Path treated us like family. Dad’s caregiver is punctual, kind, and incredibly skilled, and we finally sleep through the night knowing he is in good hands.',
     name: 'Eleanor V.',
     city: 'Decatur, GA',
     initial: 'E',
@@ -246,7 +209,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: '2',
     quote:
-      'Medicaid paperwork felt overwhelming until Fair Path walked us through every step. Mom keeps her dignity at home, and the office team communicates with us every single week.',
+      'Getting started felt overwhelming until Fair Path walked us through every step. Mom keeps her dignity at home, and the office team communicates with us every single week.',
     name: 'Marcus L.',
     city: 'Peachtree City, GA',
     initial: 'M',
@@ -292,13 +255,13 @@ export const FAQ_ITEMS: FAQ[] = [
     id: '1',
     question: 'What is private home care and who is it for?',
     answer:
-      "Private home care provides professional support services in a person's own home — for seniors, individuals recovering from illness, or those with disabilities. It enables people to maintain independence and dignity without relocating to a facility.",
+      "Private home care provides professional support services in a person's own home, for seniors, individuals recovering from illness, or those with disabilities. It enables people to maintain independence and dignity without relocating to a facility.",
   },
   {
     id: '2',
-    question: 'How do I know if my loved one qualifies for Medicaid home care?',
+    question: 'What payment methods do you accept?',
     answer:
-      "Medicaid eligibility depends on medical need and income criteria. We help families navigate this process completely — from assessment to application. Call us and we'll walk you through it at absolutely no cost.",
+      'We accept private pay only. Our team can walk you through flexible scheduling and pricing during a free consultation.',
   },
   {
     id: '3',
@@ -322,16 +285,12 @@ export const FAQ_ITEMS: FAQ[] = [
     id: '6',
     question: 'Which Georgia counties do you currently serve?',
     answer:
-      "We proudly serve Carroll, Cobb, Coweta, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, and Paulding counties. Contact us if your county isn't listed — we're expanding and may still be able to help.",
+      "We proudly serve Carroll, Cobb, Coweta, DeKalb, Douglas, Fayette, Forsyth, Fulton, Gwinnett, and Paulding counties. Contact us if your county isn't listed; we're expanding and may still be able to help.",
   },
 ]
 
 export const INSURANCE_PROGRAMS: InsuranceProgram[] = [
-  { icon: 'Building2', name: 'Medicaid CCSP', desc: 'Community Care Services Program' },
-  { icon: 'FileCheck2', name: 'SOURCE', desc: 'Service Options Using Resources in a Community Environment' },
-  { icon: 'RefreshCw', name: 'NOW / COMP', desc: 'New Options & Comprehensive Supports Waivers' },
   { icon: 'CreditCard', name: 'Private Pay', desc: 'Flexible private payment plans tailored to your family' },
-  { icon: 'Medal', name: 'Aid & Attendance', desc: 'Veterans pension benefit that may help fund personal care services' },
 ]
 
 export const HERO_IMAGES = [

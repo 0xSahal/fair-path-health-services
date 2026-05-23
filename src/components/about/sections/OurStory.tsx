@@ -45,8 +45,8 @@ export function OurStory() {
             <FadeInWhenVisible delay={0.14} className="mt-6">
               <p className="font-body text-lg leading-relaxed text-[var(--fp-text-body)]">
                 Today we proudly serve families across ten Georgia counties with a broad spectrum of
-                services, including Medicaid CCSP, SOURCE, NOW, COMP, Aid and Attendance, and private
-                pay, without ever losing the boutique attention that makes care feel personal.
+                services on a private pay basis, without ever losing the boutique attention that
+                makes care feel personal.
               </p>
             </FadeInWhenVisible>
           </div>

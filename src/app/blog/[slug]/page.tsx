@@ -122,7 +122,7 @@ async function BlogPostInner({
                 </p>
                 <p className="mt-1 font-body text-sm text-fp-text-muted">{post.author.title}</p>
                 <p className="mt-4 font-body text-[15px] leading-relaxed text-fp-text-body">
-                  Our team shares guidance designed to help families make safe, confident decisions — with dignity and peace of mind at the center.
+                  Our team shares guidance designed to help families make safe, confident decisions, with dignity and peace of mind at the center.
                 </p>
               </div>
             </Reveal>

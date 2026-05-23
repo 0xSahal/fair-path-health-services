@@ -57,7 +57,7 @@ export const BLOG_POSTS: BlogPost[] = [
     seo: {
       title: '10 Signs Your Loved One May Need In‑Home Care | Fair Path Health Services',
       description:
-        'Learn the most common signs seniors may need in-home care: falls risk, medication issues, isolation, missed meals, and more — plus what to do next.',
+        'Learn the most common signs seniors may need in-home care: falls risk, medication issues, isolation, missed meals, and more, plus what to do next.',
       keywords: ['in-home care signs', 'senior care', 'care planning', 'home care Georgia'],
     },
   },
@@ -101,32 +101,6 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   },
   {
-    slug: 'understanding-georgia-medicaid-ccsp',
-    title: 'Understanding Georgia Medicaid CCSP: What You Need to Know',
-    category: 'Payment & Insurance',
-    date: '2026-04-10',
-    excerpt:
-      'CCSP can help families access support at home. Here’s a plain-language overview and how Fair Path helps you navigate the process.',
-    image: {
-      src: '/images/payment.webp',
-      alt: 'Planning payment and Medicaid coverage for care at home',
-    },
-    author: { name: 'Fair Path Care Team', title: 'Care Coordination' },
-    content: [
-      { type: 'p', text: 'CCSP is designed to help eligible Georgians receive care services while remaining at home.' },
-      { type: 'h2', text: 'What CCSP generally supports' },
-      { type: 'ul', items: ['Personal care support', 'Help with daily routines', 'Care coordination and planning'] },
-      { type: 'p', text: 'Eligibility depends on care needs and financial guidelines. A free consultation helps clarify the best next step.' },
-    ],
-    relatedSlugs: ['veterans-benefits-for-home-care-complete-guide'],
-    seo: {
-      title: 'Georgia Medicaid CCSP Overview | Fair Path Health Services',
-      description:
-        'A clear overview of Georgia Medicaid CCSP and how it can support in-home care — plus how families can get guidance and next steps.',
-      keywords: ['Georgia Medicaid CCSP', 'CCSP program', 'Medicaid home care'],
-    },
-  },
-  {
     slug: 'difference-between-hha-and-pca',
     title: 'The Difference Between a Home Health Aide and a Personal Care Aide',
     category: 'Our Services',
@@ -147,7 +121,7 @@ export const BLOG_POSTS: BlogPost[] = [
     seo: {
       title: 'HHA vs PCA | Fair Path Health Services',
       description:
-        'Understand the difference between a home health aide and a personal care aide — and how to choose the right in-home support for your family.',
+        'Understand the difference between a home health aide and a personal care aide, and how to choose the right in-home support for your family.',
       keywords: ['HHA vs PCA', 'home health aide', 'personal care aide'],
     },
   },
@@ -174,32 +148,6 @@ export const BLOG_POSTS: BlogPost[] = [
       description:
         'Practical strategies for memory care at home: routines, safety, communication, and caregiver support for dementia and Alzheimer’s.',
       keywords: ['memory care at home', 'dementia care', 'alzheimers home care'],
-    },
-  },
-  {
-    slug: 'veterans-benefits-for-home-care-complete-guide',
-    title: "Veterans' Benefits for Home Care: A Complete Guide",
-    category: 'Payment & Insurance',
-    date: '2026-02-26',
-    excerpt:
-      'Aid & Attendance may help eligible veterans and surviving spouses fund in-home support. Here’s what families should know.',
-    image: {
-      src: '/images/service-aid-attendence.webp',
-      alt: 'Honor and support for veterans and families planning home care',
-    },
-    author: { name: 'Fair Path Care Team', title: 'Benefits Navigation' },
-    content: [
-      { type: 'p', text: 'Aid & Attendance is a VA benefit that can help fund care for eligible veterans and surviving spouses.' },
-      { type: 'h2', text: 'What families should prepare' },
-      { type: 'ul', items: ['Service history documentation', 'Care need details', 'Financial/asset documentation'] },
-      { type: 'p', text: 'Fair Path offers a no-cost eligibility conversation to help you understand your options.' },
-    ],
-    relatedSlugs: ['understanding-georgia-medicaid-ccsp'],
-    seo: {
-      title: "Veterans' Benefits for Home Care | Fair Path Health Services",
-      description:
-        'Aid & Attendance overview: what it is, who may qualify, and how families can navigate benefits to support in-home care.',
-      keywords: ['Aid and Attendance', 'VA benefits', 'veterans home care'],
     },
   },
 ]

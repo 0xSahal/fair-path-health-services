@@ -8,7 +8,7 @@ import { SectionTag } from '@/components/ui/SectionTag'
 const bullets = [
   'Professionally trained & background-checked caregivers',
   'Fully personalized care plans for every individual',
-  'Medicaid CCSP, SOURCE, NOW/COMP accepted',
+  'Private pay accepted',
   '24/7 support line for families and emergencies',
   'Regular care plan reviews and family updates',
   'Serving 10 Georgia counties with local expertise',

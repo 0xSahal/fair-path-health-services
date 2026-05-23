@@ -45,7 +45,7 @@ export default function DoNotSellForm() {
           Request received.
         </p>
         <p className="mt-2 font-body text-fp-text-muted">
-          Thank you — we’ll follow up as needed.
+          Thank you. We’ll follow up as needed.
         </p>
       </div>
     )

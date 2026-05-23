@@ -41,7 +41,7 @@ const items = [
         aria-hidden
       />
     ),
-    label: 'Medicaid & Medicare Accepted',
+    label: 'Private Pay Accepted',
   },
   {
     key: 'bond',
