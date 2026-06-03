@@ -41,6 +41,7 @@ export default function ContactSection() {
   const {
     register,
     handleSubmit,
+    reset,
     setValue,
     watch,
     formState: { errors, isSubmitting },
@@ -66,9 +67,18 @@ export default function ContactSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
       })
-      if (!res.ok) {
-        throw new Error('Request failed')
+      const data = (await res.json().catch(() => ({}))) as {
+        success?: boolean
+        error?: string
       }
+      if (!res.ok) {
+        setServerError(
+          data.error ??
+            'Something went wrong sending your message. Please try again or call us directly.',
+        )
+        return
+      }
+      reset()
       setSubmitted(true)
     } catch {
       setServerError(

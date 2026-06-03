@@ -218,7 +218,7 @@ export default function BookAppointmentForm() {
 
       {serverError ? <p className="field-error">{serverError}</p> : null}
 
-      <Button variant="primary" size="lg" className="w-full sm:w-auto" disabled={isSubmitting}>
+      <Button type="submit" variant="primary" size="lg" className="w-full sm:w-auto" disabled={isSubmitting}>
         {isSubmitting ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden />

@@ -57,12 +57,12 @@ export function Button(props: ButtonProps) {
     )
   }
 
-  const { children, variant, size, className, ...htmlBtnRest } =
+  const { children, variant, size, className, type = 'button', ...htmlBtnRest } =
     props as ButtonAsButton
   const classes = cn(buttonVariants({ variant, size }), className)
 
   return (
-    <button type="button" className={classes} {...htmlBtnRest}>
+    <button type={type} className={classes} {...htmlBtnRest}>
       {children}
     </button>
   )
