@@ -32,6 +32,7 @@ export default function HomeContactQuickForm() {
   const {
     register,
     handleSubmit,
+    reset,
     setValue,
     watch,
     formState: { errors, isSubmitting },
@@ -57,7 +58,17 @@ export default function HomeContactQuickForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
       })
-      if (!res.ok) throw new Error('failed')
+      const data = (await res.json().catch(() => ({}))) as {
+        success?: boolean
+        error?: string
+      }
+      if (!res.ok) {
+        setServerError(
+          data.error ?? 'Something went wrong. Please call us directly.',
+        )
+        return
+      }
+      reset()
       setSubmitted(true)
     } catch {
       setServerError('Something went wrong. Please call us directly.')

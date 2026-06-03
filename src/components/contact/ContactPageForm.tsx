@@ -38,6 +38,7 @@ export default function ContactPageForm() {
   const {
     register,
     handleSubmit,
+    reset,
     setValue,
     watch,
     formState: { errors, isSubmitting },
@@ -68,6 +69,10 @@ export default function ContactPageForm() {
     setValue('servicesInterested', next, { shouldValidate: true })
   }
 
+  const onInvalid = () => {
+    setServerError('Please complete all required fields before submitting.')
+  }
+
   const onSubmit = async (values: ContactPageValues) => {
     setServerError(null)
     try {
@@ -79,11 +84,24 @@ export default function ContactPageForm() {
           lastName: values.lastName,
           phone: values.phone,
           email: values.email,
+          iAm: values.iAm,
+          servicesInterested: values.servicesInterested,
           county: values.county,
-          message: `[I Am: ${values.iAm}] [Services: ${values.servicesInterested.join(', ')}] ${values.message}`,
+          message: values.message,
+          consent: values.consent,
         }),
       })
-      if (!res.ok) throw new Error('failed')
+      const data = (await res.json().catch(() => ({}))) as {
+        success?: boolean
+        error?: string
+      }
+      if (!res.ok) {
+        setServerError(
+          data.error ?? 'Something went wrong. Please call us directly.',
+        )
+        return
+      }
+      reset()
       setSubmitted(true)
     } catch {
       setServerError('Something went wrong. Please call us directly.')
@@ -104,7 +122,7 @@ export default function ContactPageForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit, onInvalid)} noValidate className="space-y-4">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="field-label" htmlFor="ct-first">
@@ -242,7 +260,13 @@ export default function ContactPageForm() {
 
       {serverError ? <p className="field-error">{serverError}</p> : null}
 
-      <Button variant="primary" size="lg" className="w-full sm:w-auto" disabled={isSubmitting}>
+      <Button
+        type="submit"
+        variant="primary"
+        size="lg"
+        className="w-full sm:w-auto"
+        disabled={isSubmitting}
+      >
         {isSubmitting ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
