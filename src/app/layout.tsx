@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import {
   Playfair_Display,
   Lora,
@@ -162,6 +163,11 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Analytics />
+        <Script
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/f8624917b17c68468003f1b48685e13a/script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
