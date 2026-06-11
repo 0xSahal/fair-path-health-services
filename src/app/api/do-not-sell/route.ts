@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 
+import { getFirstName, sendFormSubmissionEmails } from '@/lib/formEmails'
 import { doNotSellSchema } from '@/lib/schemas'
 
 export async function POST(request: Request) {
@@ -25,11 +26,23 @@ export async function POST(request: Request) {
     )
   }
 
-  console.log('[do-not-sell] request:', { ...parsed.data, receivedAt: new Date().toISOString() })
+  const { name, email, request: sellRequest } = parsed.data
+
+  sendFormSubmissionEmails({
+    submitterFirstName: getFirstName(name),
+    submitterEmail: email,
+    subjectName: name,
+    formType: 'Do Not Sell Request',
+    formTitle: 'Do Not Sell My Information — Fair Path Healthcare Website',
+    fields: [
+      { label: 'Name', value: name },
+      { label: 'Email', value: email },
+      { label: 'Request', value: sellRequest },
+    ],
+  })
 
   return NextResponse.json(
     { success: true, message: 'Request received.' },
     { status: 200 },
   )
 }
-

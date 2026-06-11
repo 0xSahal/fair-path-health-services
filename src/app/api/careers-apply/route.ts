@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 
+import { getFirstName, sendFormSubmissionEmails } from '@/lib/formEmails'
 import { careersApplicationSchema } from '@/lib/schemas'
 
 export async function POST(request: Request) {
@@ -25,9 +26,23 @@ export async function POST(request: Request) {
     )
   }
 
-  console.log('[careers-apply] submission:', {
-    ...parsed.data,
-    receivedAt: new Date().toISOString(),
+  const { name, phone, email, position, yearsExperience, certifications, whyJoin } = parsed.data
+
+  sendFormSubmissionEmails({
+    submitterFirstName: getFirstName(name),
+    submitterEmail: email,
+    subjectName: name,
+    formType: 'Careers Application',
+    formTitle: 'Careers Application — Fair Path Healthcare Website',
+    fields: [
+      { label: 'Name', value: name },
+      { label: 'Phone', value: phone },
+      { label: 'Email', value: email },
+      { label: 'Position', value: position },
+      { label: 'Years of Experience', value: yearsExperience },
+      { label: 'Certifications', value: certifications },
+      { label: 'Why Join', value: whyJoin },
+    ],
   })
 
   return NextResponse.json(
@@ -35,4 +50,3 @@ export async function POST(request: Request) {
     { status: 200 },
   )
 }
-

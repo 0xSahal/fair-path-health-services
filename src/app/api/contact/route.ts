@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 
 import dbConnect from '@/lib/dbConnect'
+import { sendFormSubmissionEmails } from '@/lib/formEmails'
 import ContactPageInquiry from '@/models/ContactPageInquiry'
 import { contactFormSchema, contactPageSchema } from '@/lib/schemas'
 
@@ -34,6 +35,23 @@ export async function POST(request: Request) {
         message,
       })
 
+      sendFormSubmissionEmails({
+        submitterFirstName: firstName,
+        submitterEmail: email,
+        subjectName: `${firstName} ${lastName}`,
+        formType: 'Contact Form Submission',
+        formTitle: 'Contact Page — Fair Path Healthcare Website',
+        fields: [
+          { label: 'Name', value: `${firstName} ${lastName}` },
+          { label: 'Phone', value: phone },
+          { label: 'Email', value: email },
+          { label: 'I Am', value: iAm },
+          { label: 'Services Interested', value: servicesInterested },
+          { label: 'County', value: county },
+          { label: 'Message', value: message },
+        ],
+      })
+
       return NextResponse.json(
         {
           success: true,
@@ -57,6 +75,21 @@ export async function POST(request: Request) {
         email,
         county,
         message,
+      })
+
+      sendFormSubmissionEmails({
+        submitterFirstName: firstName,
+        submitterEmail: email,
+        subjectName: `${firstName} ${lastName}`,
+        formType: 'Contact Form Submission',
+        formTitle: 'Contact Form — Fair Path Healthcare Website',
+        fields: [
+          { label: 'Name', value: `${firstName} ${lastName}` },
+          { label: 'Phone', value: phone },
+          { label: 'Email', value: email },
+          { label: 'County', value: county },
+          { label: 'Message', value: message },
+        ],
       })
 
       return NextResponse.json(
