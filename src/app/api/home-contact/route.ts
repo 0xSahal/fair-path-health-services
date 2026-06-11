@@ -35,7 +35,7 @@ export async function POST(request: Request) {
 
     const submission = await HomePageInquiry.create(parsed.data)
 
-    sendFormSubmissionEmails({
+    await sendFormSubmissionEmails({
       submitterFirstName: firstName,
       submitterEmail: email,
       subjectName: `${firstName} ${lastName}`,

@@ -28,7 +28,7 @@ export async function POST(request: Request) {
 
   const data = parsed.data
 
-  sendFormSubmissionEmails({
+  await sendFormSubmissionEmails({
     subjectName: 'Anonymous Survey',
     formType: 'Satisfaction Survey',
     formTitle: 'Client Satisfaction Survey — Fair Path Healthcare Website',
