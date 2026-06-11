@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 
 import dbConnect from '@/lib/dbConnect'
+import { sendFormSubmissionEmails } from '@/lib/formEmails'
 import HomePageInquiry from '@/models/HomePageInquiry'
 import { homeQuickContactSchema } from '@/lib/schemas'
 
@@ -28,9 +29,26 @@ export async function POST(request: Request) {
       )
     }
 
+    const { firstName, lastName, phone, email, serviceInterest, message } = parsed.data
+
     await dbConnect()
 
     const submission = await HomePageInquiry.create(parsed.data)
+
+    sendFormSubmissionEmails({
+      submitterFirstName: firstName,
+      submitterEmail: email,
+      subjectName: `${firstName} ${lastName}`,
+      formType: 'Home Page Contact Form Submission',
+      formTitle: 'Home Page Contact — Fair Path Healthcare Website',
+      fields: [
+        { label: 'Name', value: `${firstName} ${lastName}` },
+        { label: 'Phone', value: phone },
+        { label: 'Email', value: email },
+        { label: 'Service Interest', value: serviceInterest },
+        { label: 'Message', value: message },
+      ],
+    })
 
     return NextResponse.json(
       {
