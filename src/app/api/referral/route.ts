@@ -28,7 +28,7 @@ export async function POST(request: Request) {
 
   const data = parsed.data
 
-  sendFormSubmissionEmails({
+  await sendFormSubmissionEmails({
     submitterFirstName: getFirstName(data.referrerName),
     submitterEmail: data.referrerEmail,
     subjectName: data.referrerName,

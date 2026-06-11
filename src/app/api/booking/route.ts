@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     notes,
   } = parsed.data
 
-  sendFormSubmissionEmails({
+  await sendFormSubmissionEmails({
     submitterFirstName: getFirstName(fullName),
     submitterEmail: email,
     subjectName: fullName,

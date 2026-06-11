@@ -193,7 +193,7 @@ export async function sendAdminNotificationEmail(options: {
   }
 }
 
-export function sendFormSubmissionEmails(options: {
+export async function sendFormSubmissionEmails(options: {
   submitterFirstName?: string
   submitterEmail?: string
   subjectName: string
@@ -201,19 +201,23 @@ export function sendFormSubmissionEmails(options: {
   formTitle: string
   fields: { label: string; value: string | string[] | number | undefined | null }[]
   submittedAt?: Date
-}): void {
+}): Promise<void> {
   const submittedAt = options.submittedAt ?? new Date()
   const fields = buildFormFields(options.fields)
 
+  const tasks: Promise<void>[] = [
+    sendAdminNotificationEmail({
+      subjectName: options.subjectName,
+      formType: options.formType,
+      formTitle: options.formTitle,
+      fields,
+      submittedAt,
+    }),
+  ]
+
   if (options.submitterFirstName && options.submitterEmail) {
-    void sendThankYouEmail(options.submitterFirstName, options.submitterEmail)
+    tasks.push(sendThankYouEmail(options.submitterFirstName, options.submitterEmail))
   }
 
-  void sendAdminNotificationEmail({
-    subjectName: options.subjectName,
-    formType: options.formType,
-    formTitle: options.formTitle,
-    fields,
-    submittedAt,
-  })
+  await Promise.all(tasks)
 }

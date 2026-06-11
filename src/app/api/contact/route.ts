@@ -35,7 +35,7 @@ export async function POST(request: Request) {
         message,
       })
 
-      sendFormSubmissionEmails({
+      await sendFormSubmissionEmails({
         submitterFirstName: firstName,
         submitterEmail: email,
         subjectName: `${firstName} ${lastName}`,
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
         message,
       })
 
-      sendFormSubmissionEmails({
+      await sendFormSubmissionEmails({
         submitterFirstName: firstName,
         submitterEmail: email,
         subjectName: `${firstName} ${lastName}`,
